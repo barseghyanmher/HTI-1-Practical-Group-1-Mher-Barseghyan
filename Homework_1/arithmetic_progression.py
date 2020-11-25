@@ -3,4 +3,4 @@ a2 = int(input("a2="))
 N = int(input("N="))
 step = a2 - a1
 num = a1 + (N - 1) * step
-print("Number is: ", num)
+print('[' + str(N) + '] =', num)
