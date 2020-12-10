@@ -8,9 +8,9 @@ def missing_num(nums):
                 nums[i], nums[i + 1] = nums[i + 1], nums[i]
                 is_swapped = True
         n -= 1
+
     missed_num = 0
-    if nums == range(1, len(nums)):
-        missed_num = len(nums) + 1
+
     for i in nums:
         if nums[i + 1] - nums[i] != 1:
             missed_num = nums[i] + 1
