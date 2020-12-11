@@ -8,10 +8,10 @@ b_segment = cordinates[2:6]
 
 def segment_length(lst):
     # lst = [x1, y1, x2, y2]
-    if lst[2] - lst[0] == 0:
-        length = lst[3] - lst[1]
-    else:
-        length = lst[2] - lst[0]
+    # length = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+    x = (lst[2] - lst[0])**2
+    y = (lst[3] - lst[1])**2
+    length = (x + y)**0.5
     return length
 
 
