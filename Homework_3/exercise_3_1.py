@@ -1,23 +1,10 @@
 def missing_num(nums):
-    is_swapped = True
-    n = len(nums)
-    while is_swapped:
-        is_swapped = False
-        for i in range(n - 1):
-            if nums[i] > nums[i + 1]:
-                nums[i], nums[i + 1] = nums[i + 1], nums[i]
-                is_swapped = True
-        n -= 1
-
-    missed_num = 0
-
-    for i in nums:
-        if nums[i + 1] - nums[i] != 1:
-            missed_num = nums[i] + 1
-        else:
-            missed_num = nums[-1] + 1
-            break
-
+    max_num = max(nums)
+    lst = list(range(max_num + 1))
+    if sum(nums) == sum(lst):
+        missed_num = max_num + 1
+    else:
+        missed_num = sum(lst) - sum(nums)
     return missed_num
 
 
