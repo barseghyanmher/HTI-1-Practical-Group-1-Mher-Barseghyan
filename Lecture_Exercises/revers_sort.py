@@ -6,5 +6,5 @@ def print_reverse(n):
     print(num)
 
 
-a = int(input())
-print_reverse(a)
+N = int(input())
+print_reverse(N)

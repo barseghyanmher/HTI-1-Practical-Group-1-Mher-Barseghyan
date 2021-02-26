@@ -22,6 +22,6 @@ if __name__ == '__main__':
         'phone_num': valid_phone_num(),
     }
 
-    # func = commands.get(sys.argv)
+    # unc = commands.get(sys.argv)
     # if func:
     #     func(sys)

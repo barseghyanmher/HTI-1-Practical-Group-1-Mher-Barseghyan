@@ -15,4 +15,5 @@ def segment_length(lst):
     return length
 
 
+
 print((segment_length(a_segment) + segment_length(b_segment)) * 2)
